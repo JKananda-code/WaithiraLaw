@@ -8,7 +8,7 @@ export const metadata = {
     "Turning legal hurdles into strategic opportunities through tailored legal risk management and compliance solutions.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="min-h-screen bg-white text-slate-900 flex flex-col">

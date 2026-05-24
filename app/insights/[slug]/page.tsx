@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-const posts = {
+const posts: Record<string, { title: string; date: string; body: string }> = {
   "sample-insight": {
     title: "Sample insight title",
     date: "2024-01-01",
@@ -11,8 +11,9 @@ const posts = {
   },
 };
 
-export default function InsightPage({ params }) {
-  const post = posts[params.slug];
+export default function InsightPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
+  const post = posts[slug];
 
   if (!post) return notFound();
 
