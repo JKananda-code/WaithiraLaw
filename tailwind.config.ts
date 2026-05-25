@@ -9,8 +9,8 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#0f172a",
-          accent: "#0ea5e9",
+          DEFAULT: "#0f172a", // deep slate / navy
+          accent: "#0ea5e9",  // cyan accent
         },
       },
     },
